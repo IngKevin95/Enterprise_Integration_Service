@@ -12,7 +12,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 import jakarta.validation.Valid;
 
-import org.springframework.data.domain.Page;
+import com.empresa.integration.infrastructure.adapter.in.web.dto.PagedResponse;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -46,8 +47,8 @@ public class TransactionController {
     /** Retorna listado paginado de transacciones. */
     @GetMapping
     @Operation(summary = "Listar transacciones")
-    public Page<TransactionResponse> findAll(Pageable pageable) {
-        return transactionUseCase.findAll(pageable).map(mapper::toResponse);
+    public PagedResponse<TransactionResponse> findAll(Pageable pageable) {
+        return PagedResponse.from(transactionUseCase.findAll(pageable).map(mapper::toResponse));
     }
 
     /** Retorna el detalle de una transaccion por su ID. */
