@@ -147,6 +147,16 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*IT.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <annotationProcessorPaths>
@@ -188,6 +198,8 @@
                                     <excludes>
                                         <exclude>com/empresa/integration/EnterpriseIntegrationApplication.class</exclude>
                                         <exclude>com/empresa/integration/infrastructure/config/**</exclude>
+                                        <exclude>com/empresa/integration/infrastructure/adapter/out/persistence/entity/**</exclude>
+                                        <exclude>com/empresa/integration/infrastructure/adapter/out/persistence/mapper/**</exclude>
                                     </excludes>
                                     <rules>
                                         <rule>
@@ -196,7 +208,7 @@
                                                 <limit>
                                                     <counter>INSTRUCTION</counter>
                                                     <value>COVEREDRATIO</value>
-                                                    <minimum>0.00</minimum>
+                                                    <minimum>0.80</minimum>
                                                 </limit>
                                             </limits>
                                         </rule>
