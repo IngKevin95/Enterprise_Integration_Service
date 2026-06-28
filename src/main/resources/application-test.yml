@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:16-alpine:///integrationdb
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    com.empresa.integration: WARN
+    org.testcontainers: WARN
