@@ -198,6 +198,8 @@
                                     <excludes>
                                         <exclude>com/empresa/integration/EnterpriseIntegrationApplication.class</exclude>
                                         <exclude>com/empresa/integration/infrastructure/config/**</exclude>
+                                        <exclude>com/empresa/integration/infrastructure/adapter/out/persistence/entity/**</exclude>
+                                        <exclude>com/empresa/integration/infrastructure/adapter/out/persistence/mapper/**</exclude>
                                     </excludes>
                                     <rules>
                                         <rule>
