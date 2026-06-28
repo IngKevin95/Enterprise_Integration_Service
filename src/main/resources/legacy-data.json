@@ -1,0 +1,23 @@
+[
+  {
+    "legacyId": "LEG-001",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Empresa Ejemplo S.A.",
+    "documentNumber": "B-12345678",
+    "email": "contacto@empresa-ejemplo.com"
+  },
+  {
+    "legacyId": "LEG-002",
+    "id": "b2c3d4e5-f6a7-8901-bcde-f01234567891",
+    "name": "Corporacion Demo S.L.",
+    "documentNumber": "A-87654321",
+    "email": "info@corporacion-demo.com"
+  },
+  {
+    "legacyId": "LEG-003",
+    "id": "c3d4e5f6-a7b8-9012-cdef-012345678902",
+    "name": "Industrias Prueba C.A.",
+    "documentNumber": "J-11223344",
+    "email": "admin@industrias-prueba.com"
+  }
+]
