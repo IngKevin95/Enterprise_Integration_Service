@@ -54,5 +54,6 @@ public class LegacySystemStubAdapter implements LegacySystemPort {
 
     /** Registro interno para deserializar el JSON. */
     record LegacyClientRecord(String legacyId, String id, String name,
-                              String documentNumber, String email) { }
+                              String documentNumber, String email) {
+    }
 }

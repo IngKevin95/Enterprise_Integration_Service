@@ -8,4 +8,5 @@ public record ClientResponse(
         String name,
         String documentNumber,
         String email,
-        String legacyId) { }
+        String legacyId) {
+}
