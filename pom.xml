@@ -14,7 +14,7 @@
 
     <groupId>com.empresa</groupId>
     <artifactId>enterprise-integration-service</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>Enterprise Integration Service</name>
     <description>Microservicio de integración empresarial con REST APIs seguras, JWT y arquitectura hexagonal</description>
